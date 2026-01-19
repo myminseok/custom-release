@@ -1,0 +1,10 @@
+name: custom-release
+version: 1.0.0
+commit_hash: non-git
+uncommitted_changes: false
+jobs:
+- name: custom-pre-start-script
+  version: 6f4844f600ade0bbff737f9eff994c5aaa9e65a77fe897cda44ddbdb33c8d543
+  fingerprint: 6f4844f600ade0bbff737f9eff994c5aaa9e65a77fe897cda44ddbdb33c8d543
+  sha1: sha256:3374a9e011ed52232cc1479c0ec4634387300be864a82c342b4425f759434c14
+  packages: []

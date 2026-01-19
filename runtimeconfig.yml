@@ -1,0 +1,19 @@
+releases:
+- name: custom-release
+  version: 1.0.0                                       #<===== 1) should match the release version.
+
+addons:
+- name: custom_syslog_forwarder_addon
+  include:
+    deployments:
+    - cf-605f23577312b57a2f91                             #<===== 2) replace with actual deployment name list (no error arise even with no existing name)
+    instance_groups:
+    - uaa                                              #<===== 3) make sure the target instance group(VM) list (no error arise even with no existing name)
+
+  jobs:
+  - name: custom-pre-start-script
+    release: custom-release
+    properties:
+      script: |-
+        #!/bin/bash
+        pwd
