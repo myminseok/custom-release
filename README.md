@@ -1,7 +1,6 @@
-## build build sourcecode skelleton
+## build build sourcecode skeleton
 
 https://bosh.io/docs/create-release/
-
 
 #### ssh into opsmanager
 
